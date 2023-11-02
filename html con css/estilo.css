@@ -1,0 +1,27 @@
+
+*{
+    color:gray;
+}
+p{
+    color: purple;
+}
+.textoImportante{
+    color:blue;
+    font-size: 1.5em;
+}
+#textoHtml{
+    color:brown;
+    font-size: 2em;
+}
+div p sub{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: black
+}
+div p .textoImportante{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+u, i, .textoImportante{
+    border: 1px solid red;
+
+}
