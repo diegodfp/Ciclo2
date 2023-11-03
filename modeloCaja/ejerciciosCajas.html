@@ -55,7 +55,23 @@
         }
         #ejercicio3{
             background: linear-gradient(white, black);
-            padding: 50px;
+            width: 100%;
+        }
+        div[class="down"] > img{
+            width: 15%;
+            height: 40%;
+            margin: 0px calc(300px - 7.5%);
+            border: 3px solid grey; 
+        }
+        div[class="top"] > img{
+            width: 100%;
+            height: 100%;
+        }
+        .down{
+            background: orangered;
+            width: 100%;
+            margin: auto;
+
         }
     </style>
 </head>
@@ -90,9 +106,13 @@
             </div> <br><br>
         3.
         <section id="ejercicio3">
-            <div> 
-                <img >
-
+            <div class="top">
+                <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2917/8BzwVl2lf7yreeT7fK9cSGcn.jpg" alt="Error. imagen no encontrada">
+            </div>
+            <div class="down">
+                <img src="https://assets-prd.ignimgs.com/2022/04/17/mkvsdc-1650239592675.jpg" alt="Error. imagen no encontrada">
+                <h2>Noe Zavala</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, minus aspernatur repellendus expedita numquam consequatur alias, ipsa vero dolor error voluptatem qui consectetur reiciendis et, eveniet veritatis praesentium nisi accusantium?</p>
             </div>
         </section>
     </main>
