@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <style>
+        main{
+            width: 100%;
+            border: 1px solid gray;
+            margin: 50px auto;
+        }
+        div{
+            padding: 20px;
+            
+        }
+        .column{
+            
+            
+            display: inline-block;
+            vertical-align: top;
+            
+        }
+        #uno{
+            width: 20%;
+        }
+        .noticias{
+            width: 80%;
+            height: 100%;
+            border: 1px solid grey;
+            background-color: rgb(206, 187, 243);
+        }
+        .publicidad{
+            width: 80%;
+            height: 100%;
+            border: 1px dashed orangered;
+            background-color: orange;
+        }
+        #dos{
+            width: 40%;
+        }
+        #tres{
+            width: 20%;
+            border: 1px solid orangered;
+            height: 500px;
+        }
+        #tres h2{
+            background-color: orange;
+        }
+
+        .imagen{
+
+            background-image: url("/imagenesHtml/img/fondo_menu.gif");
+            background-repeat:repeat-x;
+            background-size: 100%;
+            width: 100%;
+        }
+        div>img{
+            width: 40px;
+        }
+        form img{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div >
+                <img src="/imagenesHtml/img/logo.jpg">
+            </div>
+            <div> 
+                <form action="https://www.google.com/search" method="get">
+                <label for="fnombre"> Buscar </label>
+                <input type="search" name="fnombre" id="fnombre">
+                </form>
+            </div>
+            <div class="imagen">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="column" id="uno">
+            <div class="noticias">
+                <h2>Noticias</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, eum praesentium! Cum praesentium sed facilis? Corrupti sed nihil </p>
+            </div> <br>
+            <br>
+            <div class="publicidad">
+                <h2>Publicidad</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, eum praesentium! Cum praesentium sed facilis? Corrupti sed nihil </p>
+            </div>
+        </div>
+        <div class="column" id="dos">
+            <div>
+                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi et veniam explicabo quod ex facilis itaque perferendis cum iste</h1>
+                <img src=""> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi beatae officia ab nihil, expedita pariatur nisi ipsam dignissimos repudiandae aliquam quasi voluptas fugit nostrum quae magni culpa reiciendis sint?</p>
+
+                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi et veniam explicabo quod ex facilis itaque perferendis cum iste</h1>
+                <img src=""> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi beatae officia ab nihil, expedita pariatur nisi ipsam dignissimos repudiandae aliquam quasi voluptas fugit nostrum quae magni culpa reiciendis sint?</p>
+            </div>
+        </div>
+        <div class="column" id="tres">
+            <h2>Phasellus blandit</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veniam, adipisci officia temporibus accusantium, iure asperiores corrupti ab repellat sint quasi minus consequuntur ea dignissimos tempora sunt repellendus reprehenderit? Debitis
+            <h2>Nullam vel turpis</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate distinctio ad amet sapiente aliquam, nostrum maxime ex pariatur. Voluptatum nam sapiente totam? Nostrum aspernatur deleniti amet cupiditate. Praesentium, laudantium quis
+        </div>
+        <div class="footer">
+            
+        </div>
+    </main>
+
+</body>
+</html>
