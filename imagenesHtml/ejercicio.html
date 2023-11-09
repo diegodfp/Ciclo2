@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menuEdicion {
+      background-color:  rgb(245, 243, 243);
+      
+    }
+
+    #menuEdicion a {
+      
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    #menuEdicion a:hover {
+      background-color: #e4e4e4;
+      color: black;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        border-collapse: collapse;
+        
+
+    }
+    li{
+        display: table;
+
+    }
+    span{
+        display: table-cell;
+        border:  1px solid black;
+        padding: 10px;
+        background: rgb(245, 243, 243);
+        width: 350px;
+        margin-right: 100px;
+    }
+    #body{
+        margin: 20px 20px;
+        
+    }
+    #body li span:hover img{
+        content: url(flecha_activa.png);
+    }
+    #body li span:hover {
+        background: #e4e4e4;
+    }
+    
+  </style>
+</head>
+<body>
+
+    <div id="menuEdicion">
+        <table>
+            <tr>
+               <td> <a href="#">Archivo</a>
+                <td><a href="#">Editar</a></td>
+                <td><a href="#">Ver</a></td>
+                <td><a href="#">Marcadores</a></td>
+                <td><a href="#">Widgets</a></td>
+                <td><a href="#">Herramientas</a></td>
+            </tr>
+                
+
+        </table>
+    
+    </div>
+    <div id="body">
+        <ul>
+            <li>  <span> <img src="flecha_inactiva.png"> Elemento 1 </span></li>
+        </ul>
+        <ul>
+            <li> <span> <img src="flecha_inactiva.png"> Elemento 2</span></li>
+        </ul>
+        <ul>
+            <li> <span> <img src="flecha_inactiva.png"> Elemento 3</span></li>
+        </ul>
+        <ul>
+            <li> <span> <img src="flecha_inactiva.png"> Elemento 4</span></li>
+        </ul>
+        <ul>
+            <li> <span><img src="flecha_inactiva.png"> Elemento 5</span></li>
+        </ul>
+        <ul>
+            <li> <span> <img src="flecha_inactiva.png"> Elemento 6</span></li>
+        </ul>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>
