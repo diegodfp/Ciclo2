@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRV 10 CSS 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        img{
+
+            margin: 10px;
+        }
+        .container-items{
+            display: grid;
+            grid-template-columns:  25% 25% 25% 25%;
+            grid-template-rows: 25% 25% 25%;
+            gap: 10px;
+            height: 600px;
+            width: 600px;
+            margin: 0 20%;
+        }
+        .item1{
+            background-color:#1c242c;
+            border-radius: 12px;
+            color: white;
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            padding: 0 25px;
+            
+        }
+        .item2{
+            background-color: darkorange;
+            border-radius: 50%;
+        }
+        .item3{
+            background-color: #b4c4d4 ;
+            border-radius: 50%;
+        }
+        .item4{
+            background-color: #1c242c ;
+            border-radius: 50%;
+        }
+        .item5{
+            background-color: #b4c4d4 ;
+            border-radius: 50%;
+        }
+        .item6{
+            background-color: #ec9c3c ;
+            border-radius: 50%;
+        }
+        .item7{
+            background-color:  #1c242c ;
+            border-radius: 50%;
+        }
+        .item8{
+            background-color: #b4c4d4 ;
+            border-radius: 50%;
+        }
+        .item9{
+            background-color:#1c242c  ;
+            border-radius: 50%;
+        }
+        img{
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-items">
+        <div class="item1">
+            <h1>Grid <br> Layout IV</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorem asperiores provident, est ex neque consequatur sunt distinctio iste hic corrupti repellendus suscipit omnis? Officia exercitationem at distinctio esse repudiandae? </p>
+        </div>
+        <div class="item2"></div>
+        <div class="item3"><img src="icon-megaphone.png" alt="bic"></div>
+        <div class="item4"><img src="icon-bicycle.png" alt="bic"></div>
+        <div class="item5"><img src="icon-bug.png" alt="bic"></div>
+        <div class="item6"><img src="icon-fast-food.png" alt="bic"></div>
+        <div class="item7"></div>
+        <div class="item8"><img src="icon-game-controller.png" alt="bic"></div>
+        <div class="item9"></div>
+    </div>
+</body>
+</html>
