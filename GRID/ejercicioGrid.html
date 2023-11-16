@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Grid</title>
+    <style>
+        .grid-container{
+            background-color: white;
+            margin: 0 auto;
+            padding: 10px;
+            display: grid;
+            width: 80%; 
+            height: 300px;
+            gap: 20px;
+            grid-template-areas: "naranja verde purpura";
+
+            grid-template-columns: auto auto auto;
+            
+        }
+        
+        .grid-item{
+            background-color: rgba(225, 255, 255, 0.8);
+            border: 1px solid rgba(0,0,0,0.8);
+            padding: 20px;
+            font-size:  30px;
+            text-align: center;
+        }
+        .naranja{
+            grid-area: naranja;
+            background-color: orangered;
+
+        }
+        .verde{
+        grid-area: verde;
+        background-color: green;
+        }
+        .purpura{
+            grid-area: purpura;
+            background-color: purple;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item naranja"> </div>
+        <div class="grid-item verde"></div>
+        <div class="grid-item purpura"> </div>
+    </div>
+</body>
+</html>
