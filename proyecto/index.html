@@ -3,77 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url(https://db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=Brandon+Grot+W01+Light);
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: white;
-            padding: 15px;
-            text-align: center;
-            color: #2a7c6f;
-            font-family: "Brandon Grot W01 Light";
-            line-height: 38.5px;
-            font-size: 28px;
-        }
-
-        nav {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            background-color: #2a7c6f       ;
-            padding: 10px;
-            font-family: "Brandon Grot W01 Light";
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #3bb6a1;
-        }
-
-        main {
-            font-family: "Brandon Grot W01 Light";
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            color: #2a7c6f;
-        }
-
-        footer {
-            background-color: #2a7c6f ;
-            padding: 10px;
-            text-align: center;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        main div{
-            margin: 40px 40px;
-            padding: 40px;
-            border: 1px solid #3bb6a1;
-        }
-        main div h1{
-            font-size: 4rem;
-        }
-        main div h2{
-            font-size: 3rem;
-        }
-        main div {
-            font-size: 1.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
 
@@ -83,51 +13,51 @@
 
     <nav>
         <a href="#">Inicio</a>
-        <a href="#modulo1">Hacer Test de Aprendizaje</a>
+        <a href="test.html">Hacer Test de Aprendizaje</a>
         <a href="#modulo2">Tipo Auditivo</a>
         <a href="#modulo3">Tipo Visual</a>
     </nav>
 
-    <main>
+    <main id="index-main">
         <section id="modulo1">
+            <!-- Contenido del primer div en la primera columna -->
             <div>
                 <h1>Bienvenido a Crea tu leyenda </h1>
                 <p>¡Explora el fascinante mundo de las leyendas a través de nuestra plataforma educativa! En Crea tu Leyenda, nos sumergimos en el intrigante universo del texto narrativo, para descubrir las historias cautivadoras que han pasado de generación en generación, comprender su importancia y crear nuestras propias leyendas.
                 </p>
             </div>
+            <!-- Contenido del segundo div en la primera columna -->
             <div>
                 <h2>¿Qué encontrarás en nuestro sitio?</h2>
                     <ul>
                         <li>Exploración de Leyendas: Sumérgete en las ricas tradiciones culturales a través de leyendas seleccionadas cuidadosamente. Descubre mitos, héroes y misterios que han perdurado a lo largo del tiempo.
-
                         </li>
                         <li>Hacer Test de Aprendizaje: En Crea tu leyenda, no solo exploramos las fascinantes leyendas, ¡también nos preocupamos por cómo aprendes mejor! Te invitamos a realizar nuestro test de aprendizaje cuidadosamente elaborado para descubrir tu estilo de aprendizaje único y potenciar tu proceso de adquisición de conocimientos.
-
                         </li>
                         <li>Modos de Aprendizaje Personalizados: Adapta tu experiencia de aprendizaje según tus preferencias. Elige entre el modo auditivo para escuchar las narrativas o el modo visual para explorar imágenes y videos relacionados
-
                         </li>
                     </ul>
                 </p>
             </div>
+            <!-- Contenido del tercer div en la primera columna -->
             <div>
-                <h2>¿Tienes Preguntas o Comentarios?
-                </h2>
+                <h2>¿Tienes Preguntas o Comentarios?</h2>
                 <p>Estamos aquí para ayudarte. Si tienes preguntas, sugerencias o simplemente quieres decir hola, ¡contáctanos!<br>
                     ¡Explora, aprende y sumérgete en el emocionante mundo de las leyendas con nuestra pagina web!
                 </p>
             </div>
-            
         </section>
 
+        <!-- Contenido de la segunda columna -->
         <section id="modulo2">
-            <img src="/proyecto/img/portada.jpg" alt="noFound">
+            <img src="img/portada.jpg" alt="noFound">
         </section>
     </main>
-
+    
     <footer>
         <p>Pie de página - © 2023 Tu Nombre</p>
     </footer>
 
+    <a href="#" id="scroll-to-top">Ir arriba</a>
 </body>
 </html>
