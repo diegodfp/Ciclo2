@@ -1,4 +1,9 @@
 @import url(https://db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=Brandon+Grot+W01+Light);
+
+html {
+    font-size: 20px;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -87,6 +92,8 @@ footer {
 
 body {
     scroll-behavior: smooth;
+    font-family: "Brandon Grot W01 Light";
+
 }
 
 #scroll-to-top {
@@ -105,61 +112,33 @@ body {
     background-color: #2a7c6f;
 }
 
-/* Estilo específico para la página de "Hacer test de aprendizaje" *//* Estilo específico para la página de "Hacer test de aprendizaje" */
-#test-header {
-    grid-row: 3; /* Ocupa la tercera fila del grid */
-    grid-column: 1 / -1;
-    position: relative;
-    height: 250px; /* Ajusta la altura según tus necesidades */
-}
-
-#test-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#test-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 2.5rem;
-}
-
-#test-main {
-    grid-row: 4; /* Ocupa la cuarta fila del grid */
-    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Tres filas en el main */
-}
 /* Estilo específico para la página de "Hacer test de aprendizaje" */
-#test-header {
+.test-header {
     grid-row: 3; /* Ocupa la tercera fila del grid */
     grid-column: 1 / -1;
     position: relative;
-    height: 250px; /* Ajusta la altura según tus necesidades */
+    height: 400px; /* Ajusta la altura según tus necesidades */
 }
 
-#test-header img {
+.test-header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#test-title {
+.test-title {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     font-size: 2.5rem;
+    background-color: #5cdac5;
+    padding: 20px;
 }
 
-#test-main {
+.test-main {
     grid-row: 4; /* Ocupa la cuarta fila del grid */
     grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
     display: grid;
@@ -167,15 +146,15 @@ body {
     gap: 20px; /* Espacio entre las filas */
 }
 
-#test-section1, #test-section3 {
+.test-section1, .test-section3 {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
 }
 
-#test-section1 div,
-#test-section3 div {
+.test-section1 div,
+.test-section3 div {
     margin: 20px;
     padding: 20px; 
     max-width: 600px; /* Establece el ancho máximo según tus necesidades */
@@ -185,25 +164,25 @@ body {
 }
 
 
-#test-section1 h1,#test-section1 p {
+.test-section1 h1,.test-section1 p {
     margin: 0; /* Elimina el margen por defecto */
 }       
 
-#test-section2 {
+.test-section2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    align-items: center; /* Centrar horizontalmente */
+   /* Centrar horizontalmente */
     justify-content: center; /* Centrar verticalmente */
 }
 
-#test-section2 div {
+.test-section2 div {
     margin: 20px;
     padding: 20px;
     border: 1px solid #3bb6a1;
 }
 
-#footer-test {
+.footer-test {
     background-color: #2a7c6f;
     padding: 10px;
     text-align: center;
@@ -213,7 +192,7 @@ body {
     grid-row: 5;
     grid-column: 1 / -1;
 }
-#test-section3 button {
+.test-section3 button {
     background-color: #2a7c6f;
     color: white;
     padding: 10px 20px;
@@ -224,6 +203,6 @@ body {
     transition: background-color 0.3s;
 }
 
-#test-section3 button:hover {
+.test-section3 button:hover {
     background-color: #3bb6a1;
 }
