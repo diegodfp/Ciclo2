@@ -16,7 +16,10 @@ body:has(input:checked) #index-main {
     color: #FFF;
     background-color: #31394D;
 }
-
+body:has(input:checked) .test-main {
+    color: #FFF;
+    background-color: #31394D;
+}
 body:has(input:checked) header {
     color: #FFF;
     background-color: #31394D;
@@ -282,4 +285,43 @@ body {
 
 .test-section3 button:hover {
     background-color: #3bb6a1;
+}
+/* Ajustes para dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    .test-header {
+        height: 200px; /* Ajusta la altura para dispositivos móviles */
+    }
+
+    .test-title {
+        top: 70%; /* Ajusta la posición vertical del título */
+        font-size: 1.5rem;
+        padding: 0px;
+    }
+
+    .test-section1 div,
+    .test-section3 div {
+        margin: 10px;
+        padding: 10px;
+        max-width: 100%; /* Ajusta el ancho máximo al 100% */
+    }
+
+    .test-section2 {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a una columna en dispositivos móviles */
+    }
+
+    .test-section2 div {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* Ajustes para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .test-header {
+        height: 300px; /* Ajusta la altura para tablets */
+    }
+
+    .test-title {
+        top: 80%; /* Ajusta la posición vertical del título para tablets */
+    }
 }
