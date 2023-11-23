@@ -1,146 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            box-sizing: border-box;
-            vertical-align: baseline;
-            hyphens: none;
-          }
-          
-          body {
-            background: #e2e1e0;
-            text-align: center;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          }
-          
-          .container {
-              margin: 0 auto;
-              padding: 0px;
-              position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            flex-direction: column;
-          }
-          
-          .switch {
-            margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-          }
-          
-          .switch input {
-            width: 1rem;
-            height: 1rem;
-            margin-right: 0.5rem;
-          }
-          
-          .card {
-            border-radius: 6px;
-            display: inline-block;
-            position: relative;
-            width: 375px;
-            box-shadow: 0 12px 13px rgb(0 0 0 / 16%), 0 12px 13px rgb(0 0 0 / 16%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px;
-            color: #31394D;
-            background-color: #FFF;
-          }
-          
-          .card .title {
-            font-size: 2rem;
-          }
-          
-          .card .job-title {
-            display: block;
-            margin-bottom: 1.5rem;
-            font-size: 0.8rem;
-          }
-          
-          .card p {
-            margin-bottom: 1.5rem;
-          }
-          
-          .card button {
-            padding: 0.8rem 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 999px;
-            color: #FFF;
-            background-color: #31394D;
-          }
-          
-          .card img {
-            max-width: 100%;
-            border-radius: 100%;
-            width: 132px;
-            height: 128px;
-            margin-bottom: 50px;
-          }
-          
-          .card .followers {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-          }
-          
-          .card .followers > div {
-            display:flex;
-            align-items: center;
-            flex-direction: column;
-          }
-          
-          .card .followers > div .title {
-            font-size: 1.5rem;
-          }
-          
-          
-    </style>
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="switch">
-          <input type="checkbox" id="check">
-          <label for="check">Check to switch dark mode</label>
+    <header>
+        <div class="logo-container">
+            <img src="img/logopng.png" alt="Logo">
         </div>
+        <div class="title-container">
+            <h1>Crea tu leyenda</h1>
+        </div>
+        <div class="dark-container">
+            <input type="checkbox" id="dark-mode-toggle">
+            <label for="dark-mode-toggle" id="dark-mode-label"><img src="img/modoOscuro.png" alt=""></label>
+        </div>
+    </header>
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+        <a href="test.html">Hacer Test de Aprendizaje</a>
+        <a href="auditivo.html">Tipo Auditivo</a>
+        <a href="visual.html">Tipo Visual</a>
         
-        <div class="card color-card">
-          <img
-            src="https://images.unsplash.com/photo-1499557354967-2b2d8910bcca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7d5363c18112a02ce22d0c46f8570147&auto=format&fit=crop&w=635&q=80%20635w"
-          />
-      
-          <h1 class="title">Beverly Little</h1>
-      
-          <span class="job-title">SENIOR PRODUCT DESIGNER</span>
-      
-          <p>Create usable interface and designs @BeverlyLittle</p>
-      
-          <button class="button">Hire me</button>
-      
-          <div class="followers">
-            <div>
-              <h2 class="title">12.3k</h2>
-              <p class="followers">Followers</p>
-            </div>
-            <div class="grid-2">
-              <h2 class="title">16k</h2>
-              <p class="followers">Followers</p>
-            </div>
-            <div class="grid-2">
-              <h2 class="title">17.8k</h2>
-              <p class="followers">Followers</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </nav>
+    <main id="formulario-main">
+      <section id="formulario-section">
+        <h1>Contáctanos</h1>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+            <input type="submit" value="Enviar" class="contact-button">
+        </form>
+    </section>
+    </main>
+    
+    <footer>
+        <p> Crea tu leyenda - © 2023 Designed by Diego Pérez</p>
+    </footer>
 </body>
 </html>
