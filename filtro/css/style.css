@@ -181,14 +181,14 @@ nav a:hover {
 /* Ajustes para dispositivos móviles */
 @media only screen and (max-width: 480px) {
     body{
-        width: 44vh; 
+        max-width: 425PX; 
     }
 
     .test-header {
-        width: 44vh; /* Ajusta la altura para dispositivos móviles */
+        width: 100%; /* Ajusta la altura para dispositivos móviles */
     }
     .test-header img{
-        max-width: 100%; /* Ajusta la altura para dispositivos móviles */
+        max-width: 425PX;  /* Ajusta la altura para dispositivos móviles */
         max-height: 100%;
     }
     .test-section2{
@@ -235,11 +235,10 @@ nav a:hover {
     }
 
 }
-
 /* Ajustes para tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     body{
-        width: 64vh; 
+        width: 62vh; 
     }
     .test-section2{
         margin: 0;
